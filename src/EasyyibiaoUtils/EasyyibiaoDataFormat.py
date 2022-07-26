@@ -125,7 +125,7 @@ class EasyyiBiaoFormat():
                 f.write(json.dumps(annotatedData, ensure_ascii=False))
             count += 1
             print(str(count) + "/" + str(allCounts))
-        print("All Done!!!")
+        return "All Done!!!"
 
     def ChangeDataFormatYolo(self, img_size: list):
         """YOLO 数据格式
@@ -157,7 +157,7 @@ class EasyyiBiaoFormat():
                     f.write(bytes(yolodata, encoding='utf-8'))
             count += 1
             print(str(count) + "/" + str(allCounts))
-        print("All Done!!!")
+        return "All Done!!!"
 
 
 def main():

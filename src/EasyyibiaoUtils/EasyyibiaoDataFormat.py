@@ -141,7 +141,7 @@ class EasyyiBiaoFormat():
         print(label_List)
 
         # 写入YOLO标签名
-        with open(self.sourcePath + "\\classes.txt", 'wb') as f:
+        with open(self.savePath+ "\\classes.txt", 'wb') as f:
             for labels in label_List:
                 f.write(bytes(labels+'\n', encoding='utf-8'))
 
